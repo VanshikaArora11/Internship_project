@@ -1,0 +1,214 @@
+<html>
+<head>
+  <style>
+       .adiv{
+          width: 1536px;
+            height:150px;
+            background-color:darkred;
+           position: absolute;
+           top: 0px;
+           left: 0px;
+      }
+    .bdiv{
+          width: 1536px;
+            height:40px;
+            background-color:firebrick;
+        position: absolute;
+        top: 150px;
+        left: 0px;
+      }
+    p1{
+        float: left;
+        color: white;
+        position: absolute;
+        top:50px;
+        text-indent: 30px;
+        font-size: 33px;
+        
+    }
+      
+      .cdiv{
+          width: 1536px;
+            height:70px;
+            background-color:darkred;
+          position: absolute;
+          top: 675px;
+          left: 0px;
+      }
+      
+      .center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 730px;
+  height: 470px;
+  position: absolute;
+ top: 200px;
+ left: 400px;
+}
+      
+      .text-block{
+  position: absolute;
+  top: 290px;
+  left: 630px;
+          height: 250px;
+          width:300px;
+  background-color: darkred;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+      }
+      .admin{
+          text-align: center;
+      }
+      .button{
+           font-size: 18px;
+font-weight: bold;
+    margin: 20px 0;
+    padding: 5px 10px;
+    width: 60px;
+    border-radius: 5px;
+    border: 0;
+    background-color: white;
+    color: black;
+      }
+      h2{
+          text-align: center;
+      }
+       * {box-sizing: border-box;}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+    border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 180px;
+    height: 50px;
+    font-size: 20px;
+}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: red;
+}
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+    </style>
+    </head>
+<body>
+    <div class="container">
+<div class="adiv">
+<img src="logo.jpg"  align="left" style="margin-left: 30px ;  margin-top: 25px; height: 100px">
+<p1>Symbiosis University of Applied Sciences</p1>
+    </div>
+<div class="bdiv"></div>
+    
+    <img src="Symbiosis-Indore-Auditorium.jpg" height="500 px" class="center"  > 
+    <div class="text-block">
+        <h4><form action="Authentication2.php" onsubmit="return validation()" method="post" >
+            <b><h2 class="student">Student</h2></b><br>
+           User Id&nbsp;&nbsp;&nbsp; : <input type = "text" name = "id" placeholder="Enter user id"/><br>
+         <br><br>
+          Password : <input type = "password" name = "pass" placeholder="Enter password"><br>
+     
+         &emsp;&emsp;&emsp;<button class="button" type="submit" >Next</button> &emsp;
+           <a href="main1.html"><input class="button" type="button" value="Back"></a>
+      </form></h4>
+        </div>
+  </div>
+<div class="ddiv"></div>
+    
+<div class="cdiv"></div>
+
+<button class="open-button" onclick="openForm()"><b>Chat</b></button>
+
+
+<div class="chat-popup" id="myForm">
+  <form action="chat2.php" method="post" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label><br><br>
+    Name<span style="color:red">*</span> : &ensp;<input type="text" name="name" placeholder="Enter your name" required>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>    
+
+<script>
+      function validation()
+        {
+            var id=document.f1.user.value;
+            var ps=document.f1.pass.value;
+            if(id.length=="" && ps.length==""){
+                alert("User name and Password fields are empty");
+            return false;
+            }
+        
+        else{
+            if(id.length==""){
+                alert("User name is empty");
+                return false;
+            }
+            if(ps.length==""){
+                alert("Password field is empty");
+                return false;
+            }
+                }
+        }
+    </script>
+
+
+</html>

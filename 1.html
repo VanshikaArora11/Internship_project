@@ -1,0 +1,126 @@
+<html>
+<head>
+  <style>
+       .adiv{
+          width: 1536px;
+            height:150px;
+            background-color:darkred;
+           position: absolute;
+           top: 0px;
+           left: 0px;
+      }
+    .bdiv{
+          width: 1536px;
+            height:40px;
+            background-color:firebrick;
+        position: absolute;
+        top: 150px;
+        left: 0px;
+      }
+    p1{
+        float: left;
+        color: white;
+        position: absolute;
+        top:50px;
+        text-indent: 30px;
+        font-size: 33px;
+        
+    }
+      
+      .cdiv{
+          width: 1536px;
+            height:70px;
+            background-color:darkred;
+          position: absolute;
+          top: 675px;
+          left: 0px;
+      }
+      
+      .center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 730px;
+  height: 470px;
+  position: absolute;
+ top: 200px;
+ left: 400px;
+}
+      
+      .text-block{
+  position: absolute;
+  top: 290px;
+  left: 630px;
+          height: 230px;
+          width:250px;
+  background-color: darkred;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+      }
+      .admin{
+          text-align: center;
+      }
+      .button{
+           font-size: 18px;
+font-weight: bold;
+    margin: 20px 0;
+    padding: 5px 10px;
+    width: 60px;
+    border-radius: 5px;
+    border: 0;
+    background-color: white;
+    color: black;
+      }
+      
+    </style>
+    </head>
+<body>
+    <div class="container">
+<div class="adiv">
+<img src="logo.jpg"  align="left" style="margin-left: 30px ;  margin-top: 25px; height: 100px">
+<p1>Symbiosis University of Applied Sciences</p1>
+    </div>
+<div class="bdiv"></div>
+    <img src="Symbiosis-Indore-Auditorium.jpg" height="500 px" class="center"  > 
+    <div class="text-block">
+        <h4><form action="authentication.php" onsubmit="return validation()" method="post">
+            <b><h2 class="admin">Admin</h2></b><br>
+            User Id&nbsp;&nbsp;&nbsp; : <input type = "text" name = "user" placeholder="Enter User Id"/><br>
+         <br><br>
+          Password : <input type = "password" name = "pass" placeholder="Enter password" >
+    
+     &emsp;&emsp;&emsp;<button class="button" type="submit">Next</button> &emsp;
+            <a href="main1.html"><input class="button" type="button" value="Back"></a>
+      </form></h4>
+        </div>
+    </div>
+
+<div class="cdiv"></div>
+<script>
+      function validation()
+        {
+            var id=document.f1.user.value;
+            var ps=document.f1.pass.value;
+            if(id.length=="" && ps.length==""){
+                alert("User name and Password fields are empty");
+            return false;
+            }
+        
+        else{
+            if(id.length==""){
+                alert("User name is empty");
+                return false;
+            }
+            if(ps.length==""){
+                alert("Password field is empty");
+                return false;
+            }
+                }
+        }
+    </script>
+
+
+</body>    
+
+</html>

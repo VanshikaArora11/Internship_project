@@ -1,0 +1,591 @@
+<html>
+<head>  
+    <style>
+   *{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        
+    }
+    body{
+        background-color: white; 
+    }
+    .adiv{
+            width: 1536px;
+            height:50px;
+            background-color:darkred;
+      }
+    .bdiv{
+          width: 1536px;
+          height: 130px;
+        background-color:firebrick;
+      }
+        .tabs ul{
+            display: flex;
+            list-style: none;
+        }
+     .link{
+        position: relative;
+        color:  rgb(85,83,83);
+        font-size: 14px;
+         margin-left: 30px;
+        display: flex;
+        width: 160px;
+        padding: 5px;
+    }
+        
+    p{
+        float: left;
+        color: white;
+        text-indent: 30px;
+        font-size: 33px;
+        position: absolute;
+        top:90px;
+        left: 100px;
+    }
+    p1{
+        font-size: 27px;
+        text-align: left;
+        color: white;
+        position: absolute;
+        top: 160px;
+        left: 50px;
+    }
+        p5{
+            position: absolute;
+            top: 170px;
+            left: 15px;
+            text-align: center;
+            font-size: 25px;
+        }
+      .content{
+        width: 1535px;
+        height: 524px;
+         position: absolute;
+        top: 190px;
+        left: 0px;
+        background: white;
+        border: 0px solid #dddddd;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .ediv .title{
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 600; 
+    }
+    
+    .tab-panel{
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+     input{
+  width: 140px;
+  padding: 4px 4px;
+  margin: 4px 0;
+  border-radius: 6px;
+ border: 2px solid black;
+  box-sizing: border-box;
+}
+    .button{
+        border-radius: 6px;
+        background-color:  lightgoldenrodyellow; 
+        color: black;
+        position: absolute;
+        top: 330px;
+        left: 610px;
+        font-size: 16px;
+        width: 60px;
+        transition-duration: 0.4s;
+        border: 2px solid firebrick;
+}
+    .button:hover {
+        background-color: lightgoldenrodyellow;
+        color: black;
+}
+        .button1{
+        border-radius: 6px;
+        background-color:  lightgoldenrodyellow; 
+        color: black;
+        position: absolute;
+        top: 150px;;
+        left: 610px;
+        font-size: 16px;
+        width: 70px;
+        transition-duration: 0.4s;
+        border: 2px solid firebrick;
+    } 
+    .button1:hover {
+        background-color: lightgoldenrodyellow;
+        color: black;
+    }
+        .fa-solid{
+            font-size: 18px;
+        }
+        .center0{
+  display: block;
+  width: 1536px;
+  height: 555px;
+  position: absolute;
+ top: -10px;
+ left: 0px;
+}
+        .aadiv{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 180px;
+            left: 30px;
+            border-radius: 50%;
+            background-color: azure;
+            opacity: 0.7;
+        }
+        .bcdiv{
+            width: 150px;
+            height: 3px;
+            background-color:dimgrey;
+            position: relative;
+             top: 280px;
+            left: 80px;
+        }
+        .dcdiv{
+            width: 150px;
+            height: 3px;
+            background-color: darkred;
+            opacity: 0.5;
+            position: relative;
+             top: 280px;
+            left: 470px;
+        }
+        .ecdiv{
+            width: 150px;
+            height: 3px;
+            background-color:brown;
+            opacity: 0.5;
+            position: relative;
+             top: 280px;
+            left: 860px;
+        }
+        .fcdiv{
+            width: 150px;
+            height: 4px;
+            background-color:brown;
+            opacity: 0.5;
+            position: relative;
+             top: 280px;
+            left: 1260px;
+        }
+        .abdiv{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 180px;
+            left: 415px;
+            border-radius: 50%;
+            background-color: blanchedalmond;
+            opacity: 0.8;
+        }
+        .acdiv{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 180px;
+            left: 800px;
+            border-radius: 50%;
+            background-color: burlywood;
+            opacity: 0.8;
+        }
+        .addiv{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 180px;
+            left: 1200px;
+            border-radius: 50%;
+            background-color: #ffff99;
+            opacity: 0.8;
+        }
+        .center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 730px;
+  height: 460px;
+  position: absolute;
+ top: 35px;
+ left: 400px;
+}
+    .abc{
+    height:350px;
+    width: 180px;
+    position: absolute;
+    left: 690px;
+    top: 120px;
+    text-align: center;
+    background-color: darkred;
+        }
+        .xdiv{
+            height: 40px;
+            width: 1536px;
+            background-color: darkred;
+            position: absolute;
+            top: 515px;
+            left: 0px;
+        }
+    .logo{
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    right: 15px;
+    border-color: white;
+    }
+        .nav-item{
+            width: 110px;
+        }
+        
+        i{
+            position: relative;
+            left: 920px;
+            right: 10px;
+            top: 4px;
+        }
+    .button{
+   
+    font-size: 18px;
+font-weight: bold;
+    margin: 20px 0;
+           position: absolute;
+           left: 10px;
+           top: 260px;
+           right:20px;
+    padding: 10px 15px;
+    width: 160px;
+    border-radius: 5px;
+    border: 0;
+           background-color: white;
+    color: black;
+}
+        .button1{
+   
+ font-size: 18px;
+font-weight: bold;
+    margin: 20px 0;
+           position: absolute;
+           left: 10px;
+           top: 190px;
+           right:20px;
+    padding: 10px 15px;
+    width: 160px;
+    border-radius: 5px;
+    border: 0;
+           background-color: white;
+    color: black;
+}
+        .tdiv{
+          width: 600px;
+            height:450px;
+            background-color:snow;
+           position: absolute;
+           top: 120px;
+           left: 30px;
+      }
+        .image{
+             position: absolute;
+           top: 50px;
+           left: 700px;
+        }
+        .fdiv{
+          width: 251px;
+            height:300px;
+            background-color:snow;
+           position: absolute;
+           top: 100px;
+           left: 673px;
+      }
+        .kdiv{
+          width: 10px;
+            height: 15px;
+            background-color:darkred;
+           position: absolute;
+           top: 30px;
+           left: 35px;
+      }
+        .bs{
+            font-size: 17px;
+            position: absolute;
+            top: 30px;
+            left: 65px;
+        }
+        .bt{
+             font-size: 17px;
+            position: absolute;
+            top: 450px;
+            left: 65px;
+        }
+        
+        .gdiv{
+          width: 10px;
+            height: 15px;
+            background-color:darkred;
+           position: absolute;
+           top: 450px;
+           left: 35px;
+      }
+        .hdiv{
+          width: 400px;
+            height: 200px;
+            background-color:floralwhite;
+           position: absolute;
+           top: 550px;
+           left: 30px;
+      }
+        .idiv{
+          width: 10px;
+            height: 15px;
+            background-color:darkred;
+           position: absolute;
+           top: 800px;
+           left: 45px;
+        }
+        .bu{
+             font-size: 17px;
+            position: absolute;
+            top: 800px;
+            left: 65px;
+        }
+        .jdiv{
+          width: 400px;
+            height: 200px;
+            background-color:floralwhite;
+           position: absolute;
+           top: 900px;
+           left: 30px;
+      }
+        .ldiv{
+            width: 10px;
+            height: 15px;
+            background-color:darkred;
+           position: absolute;
+           top: 1400px;
+           left: 45px;
+        }
+        .bv{
+           font-size: 22px;
+            position: absolute;
+            top: 1400px;
+            left: 65px; 
+        }
+        .mdiv{
+          width: 750px;
+            height:150px;
+            background-color:snow;
+           position: absolute;
+           top: 1470px;
+           left: 30px;
+      }
+        .container{
+    box-shadow: 5px 8px  #1a0432;
+    border-radius: 15px;
+    margin: auto;
+    width: 40%;
+            height: 75%;
+    padding: 10px;
+    background-color:gainsboro;   
+    justify-content: center;
+}
+        .text{
+            font-size: 14px;
+        }
+        .moreText{
+            display: none;
+        }
+        .read-more-btn{
+            padding: 15px 60px;
+            background-color: rgb(149, 170, 197);
+            color: rgb(53, 49, 49);
+            border: none;
+            outline: none;
+            font-size: 20px;
+            cursor: pointer; 
+            border-radius: 10px;
+        }
+         .text.show-more .moreText{
+            display: inline;
+        }
+        .text.show-more .dots{
+            display: none;
+        }
+h3{
+    margin-left: 50px;
+}
+        i3{
+            position: relative;
+            left: 5px;
+            top: 20px;
+        }
+    [data-tab-content]{
+        display: none;
+    }
+    .active[data-tab-content]{
+        display: block;
+     }
+    </style>
+<script src="main.js" defer></script>
+    <script src="main1.js" defer></script>
+<script src="https://kit.fontawesome.com/38791557b9.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/1769f745dd.js" crossorigin="anonymous"></script>
+
+        <!---google fonts--->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    </head>
+<body>
+<img src="logo.jpg"  align="left" style="margin-left: 20px ;  margin-top: 65px; height: 100px">
+<p>Symbiosis University of Applied Sciences</p>
+    
+<div class="adiv"></div>
+<div class="bdiv">
+<div class="tabs">
+<ul>
+<li class="active"><a class="link" href="#">
+   <i1 class="fa-solid fa-house-chimney" align="left" style="position: absolute;top: 94px;left: 660px; 5px; background-color: firebrick; color: white; back"></i1>
+<b><span class="nav-item" style="position: absolute;top: 94px;left: 690px;  font-size: 20px; color: white; back">Home</span></b>
+    </a></li>
+<li class="active"><a class="link" href="#">
+   <i1 class="fa-solid fa-arrow-right-to-bracket" align="left" style="position: absolute;top: 94px;left: 660px; background-color: firebrick; color: white; back"></i1>
+<b><span class="nav-item" style="position: absolute;top: 90px;left: 690px; font-size: 20px; color: white; back">Log In</span></b>
+    </a></li>
+<li><a class="link" href="#">
+    <i class="fa-solid fa-address-card" align="left" style="position: absolute;top: 94px;left: 650px; background-color: firebrick; color: white; back"></i>
+    <b><span class="nav-item" style="position: absolute;top: 90px;left: 680px;  font-size: 20px; color: white; back">About Us</span></b>
+    </a></li>
+<li><a class="link"  href="#">
+    <i class="fa-solid fa-phone" align="left" style="position: absolute;top: 90px;left: 660px; background-color: firebrick; color: white; back"></i>
+    <b><span class="nav-item"  style="position: absolute;top: 90px;left: 690px; font-size: 20px; color: white; back">Contact Us</span></b>
+    </a></li>
+</ul>
+</div>
+<div class="content">
+<div class="ediv" style="display: block;">
+<div class="title"></div>
+<div class="tab-panel">
+<img src="symbiosis.jpeg"  class="center0">
+    <h2 style="color: white; position: absolute;top: 30px; left: 30px; font-size: 50px; outline-color:black;">After SUAS</h2>
+
+    <div class="aadiv">
+<p2 style="position: relative;top: 70px;left: 100px;font-style: italic; font-size: 60px;">27L</p2>
+<p5 ><b>is the highest salary package offered. </b></p5>  
+</div>
+<div class="bcdiv"></div>
+<div class="abdiv">
+ <p2 style="position: relative;top: 70px;left: 100px;font-style: italic; font-size: 60px;">85%</p2>
+<p5 ><b>of alumni find their work meaningful.</b> </p5>   
+</div>
+<div class="dcdiv"></div>
+<div class="acdiv">
+<p2 style="position: relative;top: 70px;left: 100px;font-style: italic; font-size: 60px;">90%</p2>
+<p5 ><b>of those applying for business are <br> accepted. </b></p5>      
+</div>
+<div class="ecdiv"></div>
+<div class="addiv">
+<p2 style="position: relative;top: 70px;left: 100px;font-style: italic; font-size: 60px;">97%</p2>
+<p5 ><b>of SUAS graduates are <br>satisfied with their education. </b></p5>    
+</div>
+<div class="fcdiv"></div>
+</div>  
+    </div>
+<div class="ediv" style="display: none;">
+<div class="title"></div>
+<div class="tab-panel">
+<img src="Symbiosis-Indore-Auditorium.jpg"  class="center"  > 
+<div class="abc">
+    <img src="main.jpg" class="logo">
+   <a href="1.html"> <input class="button" type="button" value="Admin"></a>
+   <a href="2.html"> <input class="button1" type="button" value="Student"></a>
+    </div>  
+<div class="xdiv"></div>
+</div>
+</div>   
+<div class="ediv" style="display: none;">
+<div class="title"></div>
+<div class="tab-panel">
+        <div class="kdiv"></div>
+<b class="bs">ABOUT SYMBIOSIS INDORE</b>
+<img class="image" src="1.jpg" alt="1">
+<div class="tdiv">
+<p4 class="text">Symbiosis University of Applied Sciences (SUAS) is a self-financed University established vide Government of Madhya Pradesh Gazette (extraordinary) No 2 of 2016 dated 13 June 2016, under provisions of the Madhya Pradesh Niji Vishwavidyalaya Adhiniyam, 2007.<br> 
+    To crystallize the <u>Make in India</u> mission of the Honorable Prime Minister and to provide opportunities of Skill development along with vertical mobility leading to gainful employment to our youth, the Symbiosis University of Applied Sciences has been established in Indore under the able leadership of Dr S B Mujumdar, President and Founder, Symbiosis, and Dr Swati Mujumdar, Vice President, Symbiosis Foundation.
+    <br>Symbiosis, Indore offers short-term skill-based courses as well as degree programmes in high growth sectors of CSIT, Mechatronics, Retail, BFSI, MBA in BFSI and Marketing.
+<br>
+    Symbiosis University of Applied Sciences, Indore was established with active collaboration of leading industries and Universities from Germany and USA.<span class="dots">...</span><span class="moreText">
+<br>With an investment of over Rs 200 crores, Symbiosis has created; a state-of-the-art infrastructure spread over 25 acres. Academic buildings, hostels for boys and girls, Centre of Excellence, specialized training labs and workshops, School of Interdisciplinary Sciences are a hallmark of this University.
+
+<br>Symbiosis, Indore has imported specialized skill training machinery from Germany to impart hands-on practical training to its students.
+<div class="fdiv">
+<img src="2.jpg" alt="2">
+<img src="b.jpg" alt="3">
+</div>
+<div class="gdiv"></div>
+<b class="bt">VISION AND MISSION</b>
+
+    <div class="hdiv">
+    <img src = "vision-mission.png">
+         </div>
+    <div class="idiv">   </div>
+    <b class="bu">SALIENT FEATURES OF THE UNIVERSITY</b>
+ 
+    <div class="jdiv">
+    <img src = "features.png">
+         </div>
+    <div class="ldiv"></div>
+    <b class="bv">ABOUT PROJECT</b>
+    
+    <div class="mdiv">
+    We hereby implemented our knowledge,comprehension and skills of <b>HTML,CSS,Php,JavaScript,Database Management,MySQL</b> to make an intermediate website on the topic <b>"Employee Registration at University Exit".</b><br>We created Admin and student server in the website.Student can fill the form and the same will be reflected on admin side admin can add,remove or update student and their details.Student can choose the desired company and view the job description and company details .It contains university details and contact details as well .
+    </div></span></p4></div>
+
+<button class="read-more-btn" style="position: fixed; top: 670px; left: 1000px;">Read More</button>
+</div>
+</div> 
+<div class="ediv" style="display: none;">
+<div class="title"></div>
+<div class="tab-panel">
+<div class="container">
+         <h1 style="font-family: ubuntu; text-align: center; font-size: large;"><b>CONTACT US</b></h1>
+         <div class="address">
+            <h2>Address</h2><br>
+            <i2 class="fas fa-map-marker-alt" style=" position: absolute; margin-left: 20px;"></i2><a href="https://www.google.com/maps/place/Symbiosis+University+of+Applied+Sciences/@22.7523669,75.7933098,16.89z/data=!4m5!3m4!1s0x396301e559b7cfa7:0xfa2da74cc5756c01!8m2!3d22.7525233!4d75.7952192"><h3>Symbiosis University of Applied Sciences, Indore</h3></a>
+         </div>
+    <br>
+         <div class="Phone no">
+            <i2 class="fas fa-phone-alt" style=" position: absolute; margin-left: 20px; margin-top: 50px;"></i2><h2>Phone numbers</h2><br>
+            <h3>Landline : 0731 258 1300</h3>
+            <h3>Mobile : +91 9285333019</h3>
+         </div>
+    <br>
+         <div class="email" style="">
+            <h2>Email id</h2><br><i2 class="fas fa-envelope-open-text" style="position: absolute;  margin-left: 20px; margin-top: 10px;"></i2>
+            <h3>admissions@suas.ac.in</h3>
+            <div style="text-align: center">
+            <a href="https://www.instagram.com/symbiosisapplied/" ><i3 class="fab fa-instagram fa-2x"></i3></a>
+            <a href="https://twitter.com/suas_indore" ><i3 class="fab fa-twitter fa-2x"></i3></a>
+            <a href="https://www.facebook.com/SymbiosisApplied/" ><i3 class="fab fa-facebook-square fa-2x"></i3></a>
+             </div>
+         </div>
+      </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<html>
+<!DOCTYPE html>
+    <head>
+<style >
+    .button{
+        border-radius: 12px;
+        background-color:  #4CAF50; 
+        color: black;
+        font-size: 16px;
+        transition-duration: 0.4s;
+}
+    .button:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+}
+    .adiv{
+          width: 1519px;
+            height:150px;
+            background-color:darkred;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        
+      }
+    .bdiv{
+          width: 1519px;
+            height:40px;
+            background-color:firebrick;
+        position: absolute;
+        top: 150px;
+        left: 0px;
+      }
+    p1{
+        float: left;
+        color: white;
+        position: absolute;
+        top:50px;
+        text-indent: 30px;
+        font-size: 33px; 
+    }
+     .logout{
+       text-decoration: none;
+        font-size: 22px;
+        color: white;
+        position:absolute;
+        top: 7px;
+        left: 1425px;
+    }
+    .logout:hover{
+        color: black;
+    }
+    .fa-solid{
+       height: 0%;
+        width: 100%;
+        line-height: 50px;
+         cursor: pointer;
+        color: white;
+        font-size: 20px;
+    }
+ * {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+<script src="form1.js" defer></script>
+<script src="https://kit.fontawesome.com/38791557b9.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+<div class="adiv">
+<img src="logo.jpg"  align="left" style="margin-left: 30px ;  margin-top: 25px; height: 100px">
+<p1>Symbiosis University of Applied Sciences</p1>
+    </div>
+        <div class="bdiv">
+  <i class="fa-solid fa-right-from-bracket" align="right" style="position: absolute; top: 10px; right: 100px; color: white; back"></i>
+<a href="2.html" class="logout"><b>Log Out</b></a>
+<a href="2.html" class="logout"><b>Log Out</b></a></div>
+   <br>
+        <br><br><br><br><br><br><br><br> 
+        <br>
+
+<title>REGISTRATION FORM</title>
+             
+<form action="authenticationstudent.php" onsubmit="return validation()" method="post" autocomplete="on">
+    
+    <b><heading style ="font-size: xx-large;
+    font-style:normal;
+    font-family: inherit;
+        color: darkred;">EMPLOYMENT REGISTRATION AT UNIVERSITY EXIT</heading></b>
+<p>
+  <b>Personal Details</b><br>
+  ------------------------------------------------<br><br>
+    
+<label>Enrollment Number
+<input type="text" name="enrollment_no" placeholder="Enter your roll no" required>
+</label> 
+    <br><br>
+<label>First Name
+<input type="text" name="firstname" placeholder="Enter your first name" required>
+</label> 
+</p>
+
+  <label>Last Name
+<input type="text" name="lastname" placeholder="Enter your last name"required>
+</label> 
+ <br><p>
+  <label>Email
+<input type="text" name="email" placeholder="Enter your email id" required>
+</label> 
+</p>
+    
+<p>
+  <label>Address
+<input type="text" name="address" placeholder="Enter your address" required>
+</label> 
+</p>
+    
+<p>
+ <label>City
+<input type="text" name="city" placeholder="Enter your city"  required>
+</label> 
+</p>
+    
+<p>
+ <label>State
+<input type="text" name="state" placeholder="Enter your state" required>
+</label> 
+</p>
+    
+<p>
+ <label>Zip
+<input type="text" name="zip" placeholder="Enter zip" required>
+</label> 
+</p>
+
+<p>
+<label>Phone 
+<input type="tel" name="mobile_number" placeholder="Enter your mobile no" required>
+</label>
+</p>
+
+
+
+<legend>Gender</legend>
+<label> <input type="radio" name="gender" required value="male"> Male </label><br>
+<label> <input type="radio" name="gender" required value="female"> Female </label>
+<p>
+  
+  <p>
+<label>DOB
+<input type="date" name="dob" required>
+</label>
+</p>
+
+    <p>
+    <label>Course 
+<input type="course" name="course" placeholder="Enter your course" required >
+</label>
+</p>
+
+    <p>
+  <label>Branch 
+<input type="branch" name="branch" placeholder="Enter your branch" required > 
+</label>
+</p>
+
+
+<legend><b>Area of Interest </b></legend>
+<br><label> <input type="radio" name="interest" required value="software testing"> SOFTWARE TESTING </label>
+<br><label> <input type="radio" name="interest" required value="artificial intelligence"> ARTIFICIAL INTELLIGENCE </label>
+<br><label> <input type="radio" name="interest" required value="cyber security"> CYBER SECURITY </label>
+<br><label> <input type="radio" name="interest" required value="software developing"> SOFTWARE DEVELOPING</label>
+<br><label> <input type="radio" name="interest" required value="data scientist"> DATA SCIENTIST</label>
+<br><label> <input type="radio" name="interest" required value="debugger"> DEBUGGER</label>
+<br><label> <input type="radio" name="interest" required value="web development"> WEB DEVELOPMENT</label>
+<br><label> <input type="radio" name="interest" required value="android app">ANDROID APP</label>
+<br><label> <input type="radio" name="interest" required value="ms office"> MS OFFICE </label>
+<br><label> <input type="radio" name="interest" required value="ms office"> OTHER </label>
+<br><br>
+
+
+<legend><b>Languages good at</b> </legend>
+<p><label> <input type="checkbox" name="languagesgoodat" value="python"> Python </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="java"> JAVA </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="c/c++"> C/C++ </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="ruby"> C# </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="javascript"> JavaScript </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="html/css"> HTML/CSS </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="ruby"> Ruby </label></p>
+<p><label> <input type="checkbox" name="languagesgoodat" value="ruby"> PHP </label></p>
+
+<p>
+<legend><b>Did you get your placement by SUAS? </b></legend>
+<br><label> <input type="radio" name="placement" required value="Yes"> Yes </label>
+<label> <input type="radio" name="placement" required value="No"> No </label>
+</p>
+	
+    
+<p>
+<label><b>Preferrable Company</b>
+<select id="company" name="Preferrable_Company">
+<option value="" selected="selected">Select One</option>
+  <option value="MICROSOFT" >MICROSOFT</option>
+<option value="TCS" >TCS</option>
+<option value="ACCENTURE" >ACCENTURE</option>
+ <option value="IMPETUS" >IMPETUS</option> 
+  <option value="INFOSYS" >INFOSYS</option>
+  <option value="WIPRO" >WIPRO</option>
+<option value="HDFC BANK" >HDFC BANK</option>
+    <option value="OTHER" >OTHER</option>
+</select>
+</label> 
+</p>
+
+
+<p>
+<label><b>Orientation within your department</b>
+<select id="resources" name="Orientation_within_your_department">
+<option value="" selected="selected">Please Select</option>
+  <option value="Excellent" >Excellent</option>
+<option value="Good" >Good</option>
+<option value="Adequate" >Average</option>
+ <option value="Poor" >Poor</option> 
+  <option value="N/A" >N/A</option>
+</select>
+</label>     
+</p>
+
+<p>
+<legend><b>Did you receive a current job description when you were hired?</b></legend>
+<br><label> <input type="radio" name="Did_you_receive_a_current_job_description_when_you_were_hired" required value="Yes"> Yes </label>
+<label> <input type="radio" name="Did_you_receive_a_current_job_description_when_you_were_hired" required value="No"> No </label>
+</p>
+
+<p>
+<legend><b>Were you given proper training and opportunity to learn your job ?</b></legend>
+<br><label> <input type="radio" name="training" required value="Yes"> Yes </label>
+<label> <input type="radio" name="training" required value="No"> No </label>
+<p>
+    
+<legend><b>Did you receive any information regarding university policies & procedures upon hire ?</b></legend>
+<br><label> <input type="radio" name="receive_any_info" required value="Yes"> Yes </label>
+<label> <input type="radio" name="receive_any_info" required value="No"> No </label>
+<p>
+    
+    
+     <legend><b><br>  Would you recommend employment in your department to a friend or colleague?</b></legend>
+    <label> <input type="radio" name="recommend_employment_in_your_department_to_a_friend_or_colleague" required value="Yes"> Yes </label>
+<label> <input type="radio" name="recommend_employment_in_your_department_to_a_friend_or_colleague" required value="No"> No </label>
+<p>
+
+    
+<p>
+    
+<p>
+   <label><b>How was your experience by getting a placement through SUAS? </b> <br>
+<textarea name=" experience_by_getting_a_placement_through_SUAS" maxlength="700" placeholder="How was your experience by getting a placement through SUAS?"></textarea>
+</label>
+</p>
+
+
+<p>
+    <label><b>Please add your LinkedIn Profile link here</b> <br>
+<textarea name="LinkedIn_Profile" maxlength="500" placeholder="Please add your LinkedIn Profile link here"> </textarea>
+</label>
+</p>
+
+<p><button input class="button" type="submit" value="Submit">Submit</button></p>
+<button class="open-button" onclick="openForm()">Chat</button>
+<button class="open-button" onclick="openForm()">Chat</button>
+</form>
+<div class="chat-popup" id="myForm">
+  <form action="admin1.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
